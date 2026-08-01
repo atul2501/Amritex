@@ -120,9 +120,9 @@
 
                         <label class="remember-me">
 
+                            <span>Remember Me</span>
+                            
                             <input type="checkbox">
-
-                            Remember Me
 
                         </label>
 
@@ -173,25 +173,20 @@
 </section>
 
 <script>
+function togglePassword() {
 
-function togglePassword(){
+    const password = document.getElementById("password");
+    const eye = document.getElementById("eyeIcon");
 
-    const password=document.getElementById("password");
-    const icon=document.getElementById("eyeIcon");
+    if (password.type === "password") {
 
-    if(password.type==="password"){
+        password.type = "text";
+        eye.classList.replace("fa-eye", "fa-eye-slash");
 
-        password.type="text";
+    } else {
 
-        icon.classList.remove("fa-eye");
-        icon.classList.add("fa-eye-slash");
-
-    }else{
-
-        password.type="password";
-
-        icon.classList.remove("fa-eye-slash");
-        icon.classList.add("fa-eye");
+        password.type = "password";
+        eye.classList.replace("fa-eye-slash", "fa-eye");
 
     }
 
