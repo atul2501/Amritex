@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Products | Amritex Pharma{% endblock %}
+
+{% block content %}
+
+<section class="bg-blue-700 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-5xl font-bold">Our Products</h1>
+        <p class="mt-4 text-lg">
+            Delivering quality pharmaceutical products with global standards.
+        </p>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Product 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product1.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Paracetamol Tablets</h3>
+                    <p class="text-gray-600 mt-2">
+                        Effective pain relief and fever reduction medicine.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product2.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Vitamin Capsules</h3>
+                    <p class="text-gray-600 mt-2">
+                        Daily nutritional supplements for a healthy lifestyle.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product3.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Antibiotic Syrup</h3>
+                    <p class="text-gray-600 mt-2">
+                        Trusted antibacterial syrup for children and adults.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product4.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Healthcare Injection</h3>
+                    <p class="text-gray-600 mt-2">
+                        Sterile injectable solutions manufactured with precision.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product5.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Protein Powder</h3>
+                    <p class="text-gray-600 mt-2">
+                        Premium nutritional supplement for better health.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product6.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Eye Drops</h3>
+                    <p class="text-gray-600 mt-2">
+                        Fast relief for dry eyes and irritation.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product7.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Cough Syrup</h3>
+                    <p class="text-gray-600 mt-2">
+                        Provides quick relief from cough and throat irritation.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="{% static 'images/product8.jpg' %}" class="w-full h-56 object-cover" alt="">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-blue-700">Pain Relief Gel</h3>
+                    <p class="text-gray-600 mt-2">
+                        Effective topical gel for muscle and joint pain.
+                    </p>
+
+                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

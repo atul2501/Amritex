@@ -1,45 +1,476 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}Latest Updates{% endblock %}
+{% block title %}News & Updates | Amritex Pharma LLP{% endblock %}
 
 {% block content %}
 
-<section class="updates">
+<!-- ================= HERO ================= -->
+
+<section class="updates-hero">
+
     <div class="container">
 
-        <h1>Latest Updates</h1>
-        <p class="intro">
-            Stay informed with our latest company news and announcements.
+        <span class="section-tag">
+            NEWSROOM
+        </span>
+
+        <h1>
+            Latest News & Updates
+        </h1>
+
+        <p>
+            Stay informed with the latest announcements, product launches,
+            certifications, achievements, and corporate developments from
+            Amritex Pharma LLP.
         </p>
 
-        <div class="update-card">
-            <h3>New Product Launch</h3>
-            <small>01 August 2026</small>
-            <p>
-                Amritex Pharma proudly announces the launch of our latest
-                healthcare product designed to improve patient care.
-            </p>
-        </div>
+    </div>
 
-        <div class="update-card">
-            <h3>Quality Certification</h3>
-            <small>20 July 2026</small>
-            <p>
-                Our manufacturing facility has successfully achieved the latest
-                quality certification standards.
-            </p>
-        </div>
+</section>
 
-        <div class="update-card">
-            <h3>Career Opportunities</h3>
-            <small>15 July 2026</small>
-            <p>
-                We are hiring talented professionals across multiple departments.
-                Visit our Careers page to learn more.
-            </p>
+
+<!-- ================= FEATURED NEWS ================= -->
+
+<section class="featured-news">
+
+    <div class="container">
+
+        <div class="featured-card">
+
+            <div class="featured-image">
+
+                <img src="{% static 'image/amritex.png' %}" alt="Amritex Pharma">
+
+            </div>
+
+            <div class="featured-content">
+
+                <span class="news-category">
+
+                    Featured Announcement
+
+                </span>
+
+                <h2>
+
+                    Amritex Pharma Expands Its Healthcare Portfolio
+
+                </h2>
+
+                <div class="news-meta">
+
+                    <span>
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        01 August 2026
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Corporate Communications
+
+                    </span>
+
+                </div>
+
+                <p>
+
+                    Amritex Pharma LLP continues to strengthen its commitment
+                    towards quality healthcare by expanding its pharmaceutical
+                    product portfolio and enhancing manufacturing capabilities.
+
+                    The company remains focused on innovation, patient safety,
+                    and delivering affordable healthcare solutions.
+
+                </p>
+
+                <a href="#" class="primary-btn">
+
+                    Read More
+
+                </a>
+
+            </div>
+
         </div>
 
     </div>
+
+</section>
+
+
+<!-- ================= NEWS GRID ================= -->
+
+<section class="news-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>
+
+Recent Announcements
+
+</h2>
+
+<p>
+
+Latest updates from Amritex Pharma LLP
+
+</p>
+
+</div>
+
+<div class="news-grid">
+
+<div class="news-card">
+
+<div class="news-date">
+
+01
+
+<span>
+
+Aug
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+Product Launch
+
+</span>
+
+<h3>
+
+New Healthcare Product Successfully Introduced
+
+</h3>
+
+<p>
+
+Amritex Pharma launches an innovative
+healthcare solution aimed at improving
+patient outcomes through advanced
+formulation and research.
+
+</p>
+
+<a href="#">
+
+Read More
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<div class="news-date">
+
+20
+
+<span>
+
+Jul
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+Certification
+
+</span>
+
+<h3>
+
+Manufacturing Facility Achieves Quality Certification
+
+</h3>
+
+<p>
+
+Our production facilities continue to
+maintain the highest pharmaceutical
+quality standards with internationally
+recognized certifications.
+
+</p>
+
+<a href="#">
+
+Read More
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<div class="news-date">
+
+15
+
+<span>
+
+Jul
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+Careers
+
+</span>
+
+<h3>
+
+We're Hiring Healthcare Professionals
+
+</h3>
+
+<p>
+
+Join our growing team and build a
+rewarding career in pharmaceutical
+manufacturing, quality assurance,
+research, and corporate operations.
+
+</p>
+
+<a href="{% url 'Careers' %}">
+
+View Jobs
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<div class="news-date">
+
+10
+
+<span>
+
+Jul
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+CSR
+
+</span>
+
+<h3>
+
+Community Healthcare Awareness Initiative
+
+</h3>
+
+<p>
+
+As part of our CSR activities,
+Amritex Pharma organized a healthcare
+awareness campaign promoting
+preventive healthcare.
+
+</p>
+
+<a href="#">
+
+Read More
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<div class="news-date">
+
+05
+
+<span>
+
+Jul
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+Business
+
+</span>
+
+<h3>
+
+Expanding Distribution Network Across India
+
+</h3>
+
+<p>
+
+Our distribution network continues
+to expand, ensuring faster product
+availability and improved customer
+service nationwide.
+
+</p>
+
+<a href="#">
+
+Read More
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="news-card">
+
+<div class="news-date">
+
+28
+
+<span>
+
+Jun
+
+</span>
+
+</div>
+
+<div class="news-content">
+
+<span class="badge">
+
+Events
+
+</span>
+
+<h3>
+
+Participation in National Pharma Expo 2026
+
+</h3>
+
+<p>
+
+Amritex Pharma showcased its latest
+innovations and healthcare solutions
+during one of India's leading
+pharmaceutical exhibitions.
+
+</p>
+
+<a href="#">
+
+Read More
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="updates-newsletter">
+
+<div class="container">
+
+<h2>
+
+Stay Updated
+
+</h2>
+
+<p>
+
+Subscribe to receive the latest company news,
+product launches, healthcare insights,
+and corporate announcements.
+
+</p>
+
+<form>
+
+<input
+
+type="email"
+
+placeholder="Enter your email address"
+
+required
+
+>
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
 </section>
 
 {% endblock %}

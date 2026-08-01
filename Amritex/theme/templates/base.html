@@ -1,0 +1,309 @@
+{% load static %}
+{% load tailwind_tags %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Amritex Pharma LLP - Delivering trusted pharmaceutical solutions through innovation, quality, and healthcare excellence.">
+
+    <title>{% block title %}Amritex Pharma LLP{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    {% tailwind_css %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+
+    <div class="top-bar">
+
+        <div class="site-container">
+
+            <p>
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Delivering Quality Healthcare Solutions Across India
+
+                |
+
+                <a href="{% url 'Updates' %}">
+
+                    Latest News & Updates
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="site-container header-inner">
+
+            <!-- Logo -->
+
+            <a href="{% url 'Home' %}" class="brand">
+
+                <img src="{% static 'image/amritex.png' %}"
+
+                    class="brand-logo"
+
+                    alt="Amritex Pharma LLP">
+
+            </a>
+
+            <!-- Navigation -->
+
+            <nav class="site-nav">
+
+                <a href="{% url 'Home' %}"
+                    {% if request.resolver_match.url_name == 'Home' %}aria-current="page"{% endif %}>
+                    Home
+                </a>
+
+                <a href="{% url 'About' %}"
+                    {% if request.resolver_match.url_name == 'About' %}aria-current="page"{% endif %}>
+                    About Us
+                </a>
+
+                <a href="{% url 'product' %}"
+                    {% if request.resolver_match.url_name == 'product' %}aria-current="page"{% endif %}>
+                    Products
+                </a>
+
+                <a href="{% url 'Careers' %}"
+                    {% if request.resolver_match.url_name == 'Careers' %}aria-current="page"{% endif %}>
+                    Careers
+                </a>
+
+                <a href="{% url 'Updates' %}"
+                    {% if request.resolver_match.url_name == 'Updates' %}aria-current="page"{% endif %}>
+                    News
+                </a>
+
+                <a href="{% url 'Contact' %}"
+                    {% if request.resolver_match.url_name == 'Contact' %}aria-current="page"{% endif %}>
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Right Side -->
+
+            <div class="header-right">
+
+                <a href="{% url 'Login' %}" class="button">
+
+                    <i class="fa-solid fa-user-lock"></i>
+
+                    Partner Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="main-content">
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="contact-band">
+
+        <div class="site-container contact-band-inner">
+
+            <div>
+
+                <p class="eyebrow eyebrow-light">
+
+                    Partner with Purpose
+
+                </p>
+
+                <h2>
+
+                    Let's Build Better Healthcare Together
+
+                </h2>
+
+            </div>
+
+            <a href="{% url 'Contact' %}" class="button button-light">
+
+                Contact Our Team
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="site-container footer-grid">
+
+            <!-- Company -->
+
+            <div class="footer-intro">
+
+                <a href="{% url 'Home' %}" class="brand brand-footer">
+
+                    <img src="{% static 'image/amritex.png' %}"
+
+                        class="footer-logo"
+
+                        alt="Amritex Pharma LLP">
+
+                </a>
+
+                <p>
+
+                    Amritex Pharma LLP is committed to delivering
+                    innovative pharmaceutical solutions with
+                    uncompromising quality, integrity, and
+                    patient-centric healthcare excellence.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+
+                    <li><a href="{% url 'About' %}">About Us</a></li>
+
+                    <li><a href="{% url 'product' %}">Products</a></li>
+
+                    <li><a href="{% url 'Careers' %}">Careers</a></li>
+
+                    <li><a href="{% url 'Updates' %}">News</a></li>
+
+                    <li><a href="{% url 'Contact' %}">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <address class="footer-address">
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Mumbai, Maharashtra, India
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+
+                            +91 98765 43210
+
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:info@amritexpharma.com">
+
+                            info@amritexpharma.com
+
+                        </a>
+
+                    </p>
+
+                </address>
+
+            </div>
+
+        </div>
+
+        <div class="site-container footer-bottom">
+
+            <span>
+
+                © 2026 Amritex Pharma LLP. All Rights Reserved.
+
+            </span>
+
+            <span>
+
+                Designed for Excellence in Healthcare.
+
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

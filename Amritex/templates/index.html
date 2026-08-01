@@ -1,94 +1,404 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% load static %}
 
-{% block title %}
-Home
-{% endblock %}
+{% block title %}Amritex Pharma LLP | Healthcare & Pharmaceutical Solutions{% endblock %}
 
 {% block content %}
 
-<section class="about">
+<!-- ================= HERO ================= -->
 
-    <h2>Who We Are</h2>
+<section class="hero-section">
 
-    <p>
-        Amritex Pharma is committed to providing innovative
-        pharmaceutical solutions through research,
-        manufacturing, and global healthcare excellence.
-    </p>
+<div class="site-container hero-grid">
+
+<div class="hero-content">
+
+<span class="hero-tag">
+
+Healthcare • Innovation • Quality
+
+</span>
+
+<h1>
+
+Building a Healthier Tomorrow
+
+Through Trusted Pharmaceutical Excellence
+
+</h1>
+
+<p>
+
+Amritex Pharma LLP is committed to developing,
+manufacturing, and delivering high-quality
+pharmaceutical products that improve lives while
+maintaining the highest standards of quality,
+innovation, and patient safety.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="{% url 'product' %}" class="button">
+
+Explore Products
+
+</a>
+
+<a href="{% url 'Contact' %}" class="button button-outline">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="{% static 'image/amritex.png' %}" alt="Amritex Pharma">
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ================= ABOUT ================= -->
 
-<section class="services">
+<section class="section">
 
-    <h2>Our Services</h2>
+<div class="site-container">
 
-    <div class="cards">
+<div class="section-header">
 
-        <div class="card">
+<p class="eyebrow">
 
-            <i class="fa-solid fa-capsules"></i>
+ABOUT US
 
-            <h3>Medicine Manufacturing</h3>
+</p>
 
-            <p>
-                WHO & GMP Certified Manufacturing Facilities.
-            </p>
+<h2>
 
-        </div>
+Delivering Quality Healthcare Solutions
 
-        <div class="card">
+</h2>
 
-            <i class="fa-solid fa-flask"></i>
+</div>
 
-            <h3>Research & Development</h3>
+<div class="about-grid">
 
-            <p>
-                Innovative Drug Discovery and Development.
-            </p>
+<div>
 
-        </div>
+<p>
 
-        <div class="card">
+Amritex Pharma LLP is a pharmaceutical company
+focused on delivering innovative healthcare
+solutions through quality manufacturing,
+ethical business practices, and continuous
+research.
 
-            <i class="fa-solid fa-truck-fast"></i>
+Our mission is to provide safe,
+effective, and affordable medicines
+that improve patient outcomes.
 
-            <h3>Global Distribution</h3>
+</p>
 
-            <p>
-                Delivering medicines across the globe.
-            </p>
+</div>
 
-        </div>
+<div class="about-image">
 
-    </div>
+<img src="{% static 'image/amritex.png' %}" alt="Company">
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ================= SERVICES ================= -->
 
-<section class="why">
+<section class="section section-light">
 
-    <h2>Why Choose Us?</h2>
+<div class="site-container">
 
-    <div class="cards">
+<div class="section-header">
 
-        <div class="card">
-            <h3>20+ Years Experience</h3>
-        </div>
+<p class="eyebrow">
 
-        <div class="card">
-            <h3>100% Quality Assurance</h3>
-        </div>
+OUR EXPERTISE
 
-        <div class="card">
-            <h3>Worldwide Presence</h3>
-        </div>
+</p>
 
-        <div class="card">
-            <h3>Trusted by Healthcare Professionals</h3>
-        </div>
+<h2>
 
-    </div>
+Comprehensive Pharmaceutical Solutions
+
+</h2>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-capsules"></i>
+
+<h3>
+
+Manufacturing
+
+</h3>
+
+<p>
+
+High-quality pharmaceutical manufacturing
+under strict quality standards.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-flask"></i>
+
+<h3>
+
+Research
+
+</h3>
+
+<p>
+
+Continuous research and innovation
+to improve healthcare.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-vials"></i>
+
+<h3>
+
+Quality Assurance
+
+</h3>
+
+<p>
+
+Every product undergoes
+rigorous quality testing.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>
+
+Distribution
+
+</h3>
+
+<p>
+
+Reliable nationwide
+pharmaceutical distribution.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="site-container stats-grid">
+
+<div>
+
+<h2>100+</h2>
+
+<p>Products</p>
+
+</div>
+
+<div>
+
+<h2>500+</h2>
+
+<p>Business Partners</p>
+
+</div>
+
+<div>
+
+<h2>25+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div>
+
+<h2>100%</h2>
+
+<p>Quality Commitment</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+
+<section class="section">
+
+<div class="site-container">
+
+<div class="section-header">
+
+<p class="eyebrow">
+
+WHY CHOOSE US
+
+</p>
+
+<h2>
+
+Trusted Healthcare Partner
+
+</h2>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>
+
+Certified Quality
+
+</h3>
+
+<p>
+
+Committed to maintaining
+international quality standards.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-user-doctor"></i>
+
+<h3>
+
+Experienced Team
+
+</h3>
+
+<p>
+
+Dedicated professionals
+focused on healthcare excellence.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-globe"></i>
+
+<h3>
+
+Growing Network
+
+</h3>
+
+<p>
+
+Serving partners across
+India and expanding globally.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h3>
+
+Patient First
+
+</h3>
+
+<p>
+
+Every product is developed
+with patient wellbeing in mind.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="section cta-section">
+
+<div class="site-container">
+
+<h2>
+
+Partner With Amritex Pharma LLP
+
+</h2>
+
+<p>
+
+Let's work together to deliver better healthcare
+through quality pharmaceutical products.
+
+</p>
+
+<a href="{% url 'Contact' %}" class="button">
+
+Get Started
+
+</a>
+
+</div>
 
 </section>
 
