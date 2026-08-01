@@ -1,7 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("<h1> Welcome to Amritex Project : Home Page</h1>")
+    return render(request,'index.html')
 
 def about(request):
     return HttpResponse("<h1> This is a pharma company </h1>")
