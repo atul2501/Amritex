@@ -1,5 +1,155 @@
-body {
-    background-color: #161616;
-    font-family:Arial,sans-serif;
-    color:#fff;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fbff;
+    color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0c6cf2;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    padding-left:8%;
+    background:linear-gradient(rgba(5,40,80,.75),rgba(5,40,80,.75)),
+    url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    color:white;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:550px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 35px;
+    background:#00C853;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#009624;
+}
+
+/* SECTION */
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0c6cf2;
+    font-size:35px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#0c6cf2;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b2545;
+    color:white;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:50px 8%;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    line-height:2;
+}
+
+footer h2,
+footer h3{
+    margin-bottom:15px;
 }

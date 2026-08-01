@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Amritex Pharma{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Amritex Pharma</span>
+    </div>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="{% url 'About' %}">
+            About
+        </a>
+
+        <a href="{% url 'Contact' %}">
+            Contact
+        </a>
+
+        <a href="#">Products</a>
+
+        <a href="#">Research</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Advancing Healthcare<br>
+            Improving Lives
+        </h1>
+
+        <p>
+            Delivering trusted pharmaceutical products with
+            innovation, quality, and care for a healthier tomorrow.
+        </p>
+
+        <a href="#" class="btn">
+            Explore Products
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTENT ================= -->
+
+{% block content %}
+
+{% endblock %}
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <h2>Amritex Pharma</h2>
+
+        <p>
+            Excellence in Pharmaceutical Manufacturing &
+            Healthcare Solutions.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="/">Home</a><br>
+        <a href="{% url 'About' %}">About</a><br>
+        <a href="{% url 'Contact' %}">Contact</a>
+
+    </div>
+
+    <div>
+
+        <h3>Contact</h3>
+
+        <p>Email : info@amritexpharma.com</p>
+        <p>Phone : +91 9876543210</p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
