@@ -1,1 +1,3 @@
 pip freeze > requirement.txt
+
+python manage.py runserver  && python manage.py tailwind start
