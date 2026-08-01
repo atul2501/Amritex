@@ -513,7 +513,7 @@ transform:translateY(0);
 }
 
 .eyebrow{
-    color:var(--primary);
+    color:#e8edf3;
     font-size:14px;
     font-weight:700;
     letter-spacing:2px;
