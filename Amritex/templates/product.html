@@ -1,147 +1,597 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Products | Amritex Pharma{% endblock %}
+{% block title %}Products | Amritex Pharma LLP{% endblock %}
 
 {% block content %}
 
-<section class="bg-blue-700 text-white py-16">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-        <h1 class="text-5xl font-bold">Our Products</h1>
-        <p class="mt-4 text-lg">
-            Delivering quality pharmaceutical products with global standards.
+<!-- ================= HERO ================= -->
+
+<section class="about-hero">
+
+    <div class="site-container">
+
+        <p class="eyebrow">
+            OUR PRODUCTS
         </p>
+
+        <h1>
+            Delivering Trusted Pharmaceutical
+            Products with Quality & Innovation
+        </h1>
+
+        <p>
+            Amritex Pharma LLP provides high-quality pharmaceutical
+            products manufactured with strict quality standards,
+            advanced technology, and a commitment to improving
+            healthcare outcomes.
+        </p>
+
     </div>
+
 </section>
 
-<section class="py-16 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
+<!-- ================= PRODUCT OVERVIEW ================= -->
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<section class="section">
 
-            <!-- Product 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product1.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Paracetamol Tablets</h3>
-                    <p class="text-gray-600 mt-2">
-                        Effective pain relief and fever reduction medicine.
-                    </p>
+    <div class="site-container">
 
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img src="{% static 'image/amritex.png' %}"
+                     alt="Amritex Products">
+
             </div>
 
-            <!-- Product 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product2.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Vitamin Capsules</h3>
-                    <p class="text-gray-600 mt-2">
-                        Daily nutritional supplements for a healthy lifestyle.
-                    </p>
+            <div class="about-content">
 
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
+                <p class="eyebrow">
+
+                    PRODUCT PORTFOLIO
+
+                </p>
+
+                <h2>
+
+                    Quality Medicines You Can Trust
+
+                </h2>
+
+                <p>
+
+                    Every product manufactured by Amritex Pharma LLP
+                    reflects our commitment to safety, effectiveness,
+                    innovation, and patient care. Our formulations are
+                    developed using modern pharmaceutical practices while
+                    maintaining international quality standards.
+
+                </p>
+
+                <div class="about-highlights">
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        WHO-GMP Standards
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Quality Assured Manufacturing
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Reliable Formulations
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Customer-Focused Solutions
+
+                    </div>
+
                 </div>
-            </div>
 
-            <!-- Product 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product3.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Antibiotic Syrup</h3>
-                    <p class="text-gray-600 mt-2">
-                        Trusted antibacterial syrup for children and adults.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product4.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Healthcare Injection</h3>
-                    <p class="text-gray-600 mt-2">
-                        Sterile injectable solutions manufactured with precision.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product5.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Protein Powder</h3>
-                    <p class="text-gray-600 mt-2">
-                        Premium nutritional supplement for better health.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product6.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Eye Drops</h3>
-                    <p class="text-gray-600 mt-2">
-                        Fast relief for dry eyes and irritation.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product7.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Cough Syrup</h3>
-                    <p class="text-gray-600 mt-2">
-                        Provides quick relief from cough and throat irritation.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-                <img src="{% static 'images/product8.jpg' %}" class="w-full h-56 object-cover" alt="">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-blue-700">Pain Relief Gel</h3>
-                    <p class="text-gray-600 mt-2">
-                        Effective topical gel for muscle and joint pain.
-                    </p>
-
-                    <button class="mt-4 bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">
-                        View Details
-                    </button>
-                </div>
             </div>
 
         </div>
 
     </div>
+
+</section>
+
+<!-- ================= PRODUCT CATEGORIES ================= -->
+
+<section class="section section-light">
+
+    <div class="site-container">
+
+        <div class="section-header">
+
+            <p class="eyebrow">
+
+                PRODUCT CATEGORIES
+
+            </p>
+
+            <h2>
+
+                Our Healthcare Solutions
+
+            </h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-capsules"></i>
+
+                <h3>
+
+                    Tablets
+
+                </h3>
+
+                <p>
+
+                    High-quality tablet formulations
+                    manufactured under strict quality standards.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-pills"></i>
+
+                <h3>
+
+                    Capsules
+
+                </h3>
+
+                <p>
+
+                    Reliable capsule formulations for
+                    effective healthcare solutions.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+
+                <h3>
+
+                    Syrups
+
+                </h3>
+
+                <p>
+
+                    Safe and effective liquid
+                    pharmaceutical formulations.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-syringe"></i>
+
+                <h3>
+
+                    Injections
+
+                </h3>
+
+                <p>
+
+                    Sterile injectable medicines
+                    produced with advanced technology.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="section">
+
+    <div class="site-container">
+
+        <div class="section-header">
+
+            <p class="eyebrow">
+
+                FEATURED PRODUCTS
+
+            </p>
+
+            <h2>
+
+                Our Product Portfolio
+
+            </h2>
+
+        </div>
+
+        <div class="mission-grid">
+
+            <!-- Product 1 -->
+
+            <div class="mission-card">
+
+                <img src="{% static 'images/product1.jpg' %}"
+                     style="width:100%;border-radius:14px;margin-bottom:25px;"
+                     alt="Product">
+
+                <h3>
+
+                    Product Name 01
+
+                </h3>
+
+                <p>
+
+                    Replace this with your actual product description,
+                    therapeutic category, formulation, dosage,
+                    and product benefits.
+
+                </p>
+
+                <ul class="quality-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        WHO-GMP Quality
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Premium Ingredients
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Reliable Formulation
+
+                    </li>
+
+                </ul>
+
+                <a href="{% url 'Contact' %}"
+                   class="button"
+                   style="margin-top:25px;display:inline-flex;">
+
+                    Request Information
+
+                </a>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="mission-card">
+
+                <img src="{% static 'images/product2.jpg' %}"
+                     style="width:100%;border-radius:14px;margin-bottom:25px;"
+                     alt="Product">
+
+                <h3>
+
+                    Product Name 02
+
+                </h3>
+
+                <p>
+
+                    Replace this with your second product description,
+                    including formulation, indications, dosage,
+                    and key product advantages.
+
+                </p>
+
+                <ul class="quality-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Certified Manufacturing
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        High Quality Standards
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Trusted Healthcare Solution
+
+                    </li>
+
+                </ul>
+
+                <a href="{% url 'Contact' %}"
+                   class="button"
+                   style="margin-top:25px;display:inline-flex;">
+
+                    Request Information
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE OUR PRODUCTS ================= -->
+
+<section class="section section-light">
+
+    <div class="site-container">
+
+        <div class="section-header">
+
+            <p class="eyebrow">
+
+                WHY CHOOSE OUR PRODUCTS
+
+            </p>
+
+            <h2>
+
+                Excellence in Every Formulation
+
+            </h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+
+                    Premium Quality
+
+                </h3>
+
+                <p>
+
+                    Manufactured using carefully selected raw materials
+                    and strict quality control procedures.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-microscope"></i>
+
+                <h3>
+
+                    Research Driven
+
+                </h3>
+
+                <p>
+
+                    Continuous innovation helps us develop
+                    safe and effective pharmaceutical products.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>
+
+                    Patient Safety
+
+                </h3>
+
+                <p>
+
+                    Every formulation is designed with
+                    patient safety and therapeutic effectiveness
+                    as the highest priority.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>
+
+                    Trusted Partner
+
+                </h3>
+
+                <p>
+
+                    Building long-term relationships through
+                    consistent quality and dependable healthcare
+                    solutions.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= QUALITY COMMITMENT ================= -->
+
+<section class="section">
+
+    <div class="site-container">
+
+        <div class="quality-grid">
+
+            <div>
+
+                <p class="eyebrow">
+
+                    QUALITY COMMITMENT
+
+                </p>
+
+                <h2>
+
+                    Manufacturing with Precision & Care
+
+                </h2>
+
+                <p>
+
+                    Quality is at the core of everything we do.
+                    From sourcing pharmaceutical ingredients
+                    to manufacturing, packaging, and distribution,
+                    every process follows rigorous quality
+                    assurance practices.
+
+                </p>
+
+                <ul class="quality-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        WHO-GMP Manufacturing Standards
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Advanced Quality Testing
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Regulatory Compliance
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Continuous Improvement
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <img src="{% static 'image/amritex.png' %}"
+                     alt="Quality Commitment">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCT ENQUIRY ================= -->
+
+<section class="section cta-section">
+
+    <div class="site-container">
+
+        <h2>
+
+            Looking for More Product Information?
+
+        </h2>
+
+        <p>
+
+            Whether you need product specifications,
+            distribution support, partnership opportunities,
+            or technical information, our team is ready
+            to assist you.
+
+        </p>
+
+        <a href="{% url 'Contact' %}" class="button">
+
+            Contact Our Team
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
 </section>
 
 {% endblock %}
